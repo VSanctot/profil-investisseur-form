@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<title>Profil investisseur, risque & durabilité</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+body{font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:2rem;max-width:960px}
+h1,h2{margin:1.2rem 0 .6rem}
+fieldset{border:1px solid #e5e7eb;padding:1rem;margin:1rem 0;border-radius:12px}
+legend{font-weight:600}
+.group{margin:.5rem 0 1rem}
+label{display:block;margin:.25rem 0}
+small{color:#6b7280}
+</style>
+</head>
+<body>
+<h1>Profil investisseur, risque & durabilité</h1>
+<p>Questionnaire (≈5 min) pour évaluer vos connaissances/expérience, votre profil de risque et vos préférences de durabilité.</p>
+
+<!-- SECTION 1 -->
+<h2>Section 1 : Connaissance & Expérience financières</h2>
+
+<fieldset>
+<legend>S1Q1 — Avez-vous déjà investi dans ces produits ?</legend>
+<div class="group">
+<!-- +1 par case cochée -->
+<label><input type="checkbox" name="S1Q1" value="Actions"> Actions</label>
+<label><input type="checkbox" name="S1Q1" value="Obligations"> Obligations</label>
+<label><input type="checkbox" name="S1Q1" value="FIP, FCPI, FCPR"> FIP, FCPI, FCPR</label>
+<label><input type="checkbox" name="S1Q1" value="Produits monétaires / OPCVM monétaire"> Produits monétaires / OPCVM monétaire</label>
+<label><input type="checkbox" name="S1Q1" value="OPCVM diversifié"> OPCVM diversifié</label>
+<label><input type="checkbox" name="S1Q1" value="Produits structurés"> Produits structurés</label>
+<label><input type="checkbox" name="S1Q1" value="Produits bancaires (Livret, PEL…)"> Produits bancaires (Livret, PEL…)</label>
+<label><input type="checkbox" name="S1Q1" value="Immobilier (SCPI, OPCI…)"> Immobilier (SCPI, OPCI…)</label>
+<label><input type="checkbox" name="S1Q1" value="PER"> PER</label>
+<label><input type="checkbox" name="S1Q1" value="Contrat de capitalisation"> Contrat de capitalisation</label>
+<small>Score : +1 par case cochée</small>
+</div>
+</fieldset>
+
+<fieldset>
+<legend>S1Q2 — Connaissez-vous les risques et le fonctionnement de ces produits ?</legend>
+<div class="group">
+<!-- +2 par case cochée -->
+<label><input type="checkbox" name="S1Q2" value="Actions"> Actions</label>
+<label><input type="checkbox" name="S1Q2" value="Obligations"> Obligations</label>
+<label><input type="checkbox" name="S1Q2" value="FIP, FCPI, FCPR"> FIP, FCPI, FCPR</label>
+<label><input type="checkbox" name="S1Q2" value="Produits monétaires / OPCVM monétaire"> Produits monétaires / OPCVM monétaire</label>
+<label><input type="checkbox" name="S1Q2" value="OPCVM diversifié"> OPCVM diversifié</label>
+<label><input type="checkbox" name="S1Q2" value="Produits structurés"> Produits structurés</label>
+<label><input type="checkbox" name="S1Q2" value="Produits bancaires (Livret, PEL…)"> Produits bancaires (Livret, PEL…)</label>
+<label><input type="checkbox" name="S1Q2" value="Immobilier (SCPI, OPCI…)"> Immobilier (SCPI, OPCI…)</label>
+<label><input type="checkbox" name="S1Q2" value="PER"> PER</label>
+<label><input type="checkbox" name="S1Q2" value="Contrat de capitalisation"> Contrat de capitalisation</label>
+<small>Score : +2 par case cochée</small>
+</div>
+</fieldset>
+
+<fieldset>
+<legend>S1Q3 — Dans le passé, la gestion de mes avoirs a été…</legend>
+<!-- Déléguée +5 / Seul sans conseiller +20 / Seul avec conseiller +10 -->
+<label><input type="radio" name="S1Q3" value="deleguee"> Déléguée à un gestionnaire</label>
+<label><input type="radio" name="S1Q3" value="seul_sans"> Gérée par moi-même sans l'aide d'un conseiller</label>
+<label><input type="radio" name="S1Q3" value="seul_avec"> Gérée par moi-même avec l'aide d'un conseiller</label>
+</fieldset>
+
+<fieldset>
+<legend>S1Q4 — Votre information (répondez pour chaque ligne)</legend>
+<!-- Oui 10 / Parfois 5 / Jamais 0 -->
+<label>Je lis la presse spécialisée
+<select name="S1Q4_presse">
+<option>Oui</option><option>Parfois</option><option>Jamais</option>
+</select>
+</label>
+<label>Je m'informe de la valeur de mes contrats d'assurance (au moins mensuel)
+<select name="S1Q4_contrats">
+<option>Oui</option><option>Parfois</option><option>Jamais</option>
+</select>
+</label>
+<label>Je suis la bourse / les marchés financiers
+<select name="S1Q4_marche">
+<option>Oui</option><option>Parfois</option><option>Jamais</option>
+</select>
+</label>
+<label>Je regarde mon relevé de situation (au moins mensuel)
+<select name="S1Q4_releve">
+<option>Oui</option><option>Parfois</option><option>Jamais</option>
+</select>
+</label>
+</fieldset>
+
+<fieldset>
+<legend>S1Q5 — Vrai / Faux</legend>
+<!-- +10 si bonne réponse (clé dans Jotform) -->
+<label>En cas de baisse des marchés, le fonds euros suit la même évolution.
+<select name="S1Q5_1"><option>Vrai</option><option>Faux</option></select>
+</label>
+<label>Plus un produit est risqué, plus ses performances peuvent varier fortement.
+<select name="S1Q5_2"><option>Vrai</option><option>Faux</option></select>
+</label>
+<label>Moins un patrimoine est diversifié, plus il est exposé aux risques.
+<select name="S1Q5_3"><option>Vrai</option><option>Faux</option></select>
+</label>
+<label>Peut-on perdre de l'argent avec un PER / assurance-vie en UC ?
+<select name="S1Q5_4"><option>Vrai</option><option>Faux</option></select>
+</label>
+<label>Les fonds monétaires contiennent TCN, bons du trésor, obligations CT.
+<select name="S1Q5_5"><option>Vrai</option><option>Faux</option></select>
+</label>
+<label>Les obligations sont sans risque de défaut.
+<select name="S1Q5_6"><option>Vrai</option><option>Faux</option></select>
+</label>
+<label>La performance d’un fonds obligataire dépend des taux d’intérêt.
+<select name="S1Q5_7"><option>Vrai</option><option>Faux</option></select>
+</label>
+<label>Les actions sont adaptées au court terme.
+<select name="S1Q5_8"><option>Vrai</option><option>Faux</option></select>
+</label>
+<label>Le cours des actions dépend de la santé de l’entreprise & de l’économie.
+<select name="S1Q5_9"><option>Vrai</option><option>Faux</option></select>
+</label>
+<label>Une SCPI est liquide par défaut.
+<select name="S1Q5_10"><option>Vrai</option><option>Faux</option></select>
+</label>
+<label>Un CLN expose à un risque de défaut d’émetteurs.
+<select name="S1Q5_11"><option>Vrai</option><option>Faux</option></select>
+</label>
+</fieldset>
+
+<!-- SECTION 2 -->
+<h2>Section 2 : Évaluation du risque</h2>
+
+<fieldset>
+<legend>S2Q1 — J’accepte une fluctuation de mon patrimoine…</legend>
+<label><input type="radio" name="S2Q1" value="Faible"> Faible</label>
+<label><input type="radio" name="S2Q1" value="Prudent"> Prudent</label>
+<label><input type="radio" name="S2Q1" value="Équilibré"> Équilibré</label>
+<label><input type="radio" name="S2Q1" value="Dynamique"> Dynamique</label>
+</fieldset>
+
+<fieldset>
+<legend>S2Q2 — Variation max tolérée sur 5% de mon patrimoine…</legend>
+<label><input type="radio" name="S2Q2" value="Faible"> Faible</label>
+<label><input type="radio" name="S2Q2" value="Prudent"> Prudent</label>
+<label><input type="radio" name="S2Q2" value="Équilibré"> Équilibré</label>
+<label><input type="radio" name="S2Q2" value="Dynamique"> Dynamique</label>
+</fieldset>
+
+<fieldset>
+<legend>S2Q3 — Si un placement chute de 20%…</legend>
+<label><input type="radio" name="S2Q3" value="Je vends tout"> Je vends tout</label>
+<label><input type="radio" name="S2Q3" value="Je vends une partie"> Je vends une partie</label>
+<label><input type="radio" name="S2Q3" value="Je conserve"> Je conserve</label>
+<label><input type="radio" name="S2Q3" value="J’en rachète plus"> J’en rachète plus</label>
+</fieldset>
+
+<fieldset>
+<legend>S2Q4 — Déjà subi des pertes ?</legend>
+<label><input type="radio" name="S2Q4" value="J’ai vendu"> J’ai vendu</label>
+<label><input type="radio" name="S2Q4" value="J’ai vendu une partie"> J’ai vendu une partie</label>
+<label><input type="radio" name="S2Q4" value="J’ai tout conservé"> J’ai tout conservé</label>
+<label><input type="radio" name="S2Q4" value="J’ai réinvesti"> J’ai réinvesti</label>
+</fieldset>
+
+<fieldset>
+<legend>S2Q5 — Dernières secousses financières vécues…</legend>
+<label><input type="radio" name="S2Q5" value="Je n’en dormais pas"> Je n’en dormais pas</label>
+<label><input type="radio" name="S2Q5" value="Je n’étais pas au courant"> Je n’étais pas au courant</label>
+<label><input type="radio" name="S2Q5" value="Je suivais sans paniquer"> Je suivais sans paniquer</label>
+<label><input type="radio" name="S2Q5" value="Très bien, ça remonte toujours"> Très bien, ça remonte toujours</label>
+</fieldset>
+
+<fieldset>
+<legend>S2Q6 — Importance de la liquidité</legend>
+<label><input type="radio" name="S2Q6" value="Part liquide importante"> Part liquide importante</label>
+<label><input type="radio" name="S2Q6" value="Petit matelas"> Petit matelas</label>
+<label><input type="radio" name="S2Q6" value="Minimum, je peux vendre vite"> Minimum, je peux vendre vite</label>
+</fieldset>
+
+<fieldset>
+<legend>S2Q7 — Dans la vie, aimez-vous prendre des risques ?</legend>
+<label><input type="radio" name="S2Q7" value="Non"> Non</label>
+<label><input type="radio" name="S2Q7" value="Parfois"> Parfois</label>
+<label><input type="radio" name="S2Q7" value="Assez souvent"> Assez souvent</label>
+<label><input type="radio" name="S2Q7" value="Autant que possible"> Autant que possible</label>
+</fieldset>
+
+<fieldset>
+<legend>S2Q8 — Préférez-vous…</legend>
+<label><input type="radio" name="S2Q8" value="Gagner 3 / rien perdre"> Gagner 3 / rien perdre</label>
+<label><input type="radio" name="S2Q8" value="Gagner 10 ou perdre 3"> Gagner 10 ou perdre 3</label>
+<label><input type="radio" name="S2Q8" value="Gagner 15 ou perdre 7"> Gagner 15 ou perdre 7</label>
+<label><input type="radio" name="S2Q8" value="Gagner 20 ou perdre 10"> Gagner 20 ou perdre 10</label>
+</fieldset>
+
+<!-- SECTION 3 -->
+<h2>Section 3 : Durabilité</h2>
+
+<fieldset>
+<legend>S3Q1 — Avez-vous des préférences en matière de durabilité ?</legend>
+<label><input type="radio" name="S3Q1" value="Oui"> Oui</label>
+<label><input type="radio" name="S3Q1" value="Non"> Non</label>
+</fieldset>
+
+<fieldset>
+<legend>S3Q2 — Taxonomie européenne</legend>
+<label>Pourcentage souhaité (%) <input type="number" name="S3Q2_pct" min="0" max="100"></label>
+<small>Afficher seulement si S3Q1 = Oui</small>
+</fieldset>
+
+<fieldset>
+<legend>S3Q3 — Article 8</legend>
+<label>Pourcentage souhaité (%) <input type="number" name="S3Q3_pct" min="0" max="100"></label>
+<small>Afficher seulement si S3Q1 = Oui</small>
+</fieldset>
+
+<fieldset>
+<legend>S3Q4 — Article 9</legend>
+<label>Pourcentage souhaité (%) <input type="number" name="S3Q4_pct" min="0" max="100"></label>
+<small>Afficher seulement si S3Q1 = Oui</small>
+</fieldset>
+
+<fieldset>
+<legend>S3Q5 — Exclusions</legend>
+<label>Exclusions souhaitées (charbon, pétrole, etc.)<br>
+<textarea name="S3Q5_exclusions" rows="3"></textarea>
+</label>
+<small>Afficher seulement si S3Q1 = Oui</small>
+</fieldset>
+
+<p><em>Note : le calcul des scores et l’affichage des profils se configurent dans Jotform (voir ci-dessous).</em></p>
+</body>
+</html>
